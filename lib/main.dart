@@ -26,9 +26,9 @@ class MyApp extends StatelessWidget {
 }
 
 class MyAppState extends ChangeNotifier {
-  var ogContent = WordPair.random();
+  var uiContent = WordPair.random();
   void getNext() {
-    ogContent = WordPair.random();
+    uiContent = WordPair.random();
     notifyListeners();
   }
 }
@@ -37,12 +37,13 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var appState = context.watch<MyAppState>();
+    var couple = appState.uiContent;
 
     return Scaffold(
       body: Column(
         children: [
           Text('the POS system of POS systems'),
-          Text(appState.ogContent.asLowerCase),
+          Text(couple.asLowerCase),
           ElevatedButton(
             onPressed: () {
               appState.getNext();
