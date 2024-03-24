@@ -48,7 +48,7 @@ class MyHomePage extends StatelessWidget {
             onPressed: () {
               appState.getNext();
             },
-            child: Text('Click here: new term'),
+            child: Text('Click to spawn new term'),
           )
         ],
       ),
