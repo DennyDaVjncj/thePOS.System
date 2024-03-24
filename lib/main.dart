@@ -26,9 +26,9 @@ class MyApp extends StatelessWidget {
 }
 
 class MyAppState extends ChangeNotifier {
-  var ogContent = WordPair.random();
+  var uiContent = WordPair.random();
   void getNext() {
-    ogContent = WordPair.random();
+    uiContent = WordPair.random();
     notifyListeners();
   }
 }
@@ -42,7 +42,7 @@ class MyHomePage extends StatelessWidget {
       body: Column(
         children: [
           Text('the POS system of POS systems'),
-          Text(appState.ogContent.asLowerCase),
+          Text(appState.uiContent.asLowerCase),
           ElevatedButton(
             onPressed: () {
               appState.getNext();
