@@ -43,7 +43,7 @@ class MyHomePage extends StatelessWidget {
       body: Column(
         children: [
           Text('the POS system of POS systems'),
-          Text(couple.asLowerCase),
+          uiContent(couple: couple),
           ElevatedButton(
             onPressed: () {
               appState.getNext();
@@ -53,5 +53,19 @@ class MyHomePage extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+
+class uiContent extends StatelessWidget {
+  const uiContent({
+    super.key,
+    required this.couple,
+  });
+
+  final WordPair couple;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(couple.asLowerCase);
   }
 }
