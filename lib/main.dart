@@ -67,5 +67,5 @@ class uiContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(couple.asLowerCase);
-  }
+  } //this is what ultimately renders to the UI
 }
