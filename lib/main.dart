@@ -43,7 +43,7 @@ class MyHomePage extends StatelessWidget {
       body: Column(
         children: [
           Text('the POS system of POS systems'),
-          uiContent(couple: couple),
+          UiContent(couple: couple),
           ElevatedButton(
             onPressed: () {
               appState.getNext();
@@ -56,8 +56,8 @@ class MyHomePage extends StatelessWidget {
   }
 }
 
-class uiContent extends StatelessWidget {
-  const uiContent({
+class UiContent extends StatelessWidget {
+  const UiContent({
     super.key,
     required this.couple,
   });
@@ -66,6 +66,9 @@ class uiContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(couple.asLowerCase);
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Text(couple.asLowerCase),
+    );
   } //this is what ultimately renders to the UI
 }
