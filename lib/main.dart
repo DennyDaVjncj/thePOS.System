@@ -71,7 +71,7 @@ class UiContent extends StatelessWidget {
       color: theme.colorScheme.onPrimary,
     );
     return Card(
-      color: theme.colorScheme.primary,
+      color: theme.colorScheme.onPrimary,
       elevation: 12.0,
       child: Padding(
         padding: const EdgeInsets.all(39.0),
