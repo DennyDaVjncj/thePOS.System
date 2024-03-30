@@ -66,9 +66,11 @@ class UiContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Text(couple.asLowerCase),
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(33.0),
+        child: Text(couple.asLowerCase),
+      ),
     );
   } //this is what ultimately renders to the UI
 }
