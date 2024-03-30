@@ -73,7 +73,7 @@ class UiContent extends StatelessWidget {
     return Card(
       color: theme.colorScheme.primary,
       child: Padding(
-        padding: const EdgeInsets.all(33.0),
+        padding: const EdgeInsets.all(39.0),
         child: Text(couple.asLowerCase, style: style),
       ),
     );
