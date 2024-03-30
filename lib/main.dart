@@ -48,7 +48,7 @@ class MyHomePage extends StatelessWidget {
             onPressed: () {
               appState.getNext();
             },
-            child: Text('Click to spawn new term'),
+            child: Text('click here to trigger an action potential'),
           )
         ],
       ),
@@ -72,6 +72,7 @@ class UiContent extends StatelessWidget {
     );
     return Card(
       color: theme.colorScheme.primary,
+      elevation: 12.0,
       child: Padding(
         padding: const EdgeInsets.all(39.0),
         child: Text(couple.asLowerCase, style: style),
