@@ -71,7 +71,7 @@ class UiContent extends StatelessWidget {
       color: theme.colorScheme.onPrimary,
     );
     return Card(
-      color: theme.colorScheme.onPrimary,
+      color: theme.colorScheme.primary,
       elevation: 12.0,
       child: Padding(
         padding: const EdgeInsets.all(39.0),
@@ -80,3 +80,6 @@ class UiContent extends StatelessWidget {
     );
   } //this is what ultimately renders to the UI
 }
+/**
+ * left off with the copywith() update
+ */
