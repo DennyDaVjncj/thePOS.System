@@ -41,6 +41,7 @@ class MyHomePage extends StatelessWidget {
 
     return Scaffold(
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text('the POS system of POS systems'),
           UiContent(couple: couple),
