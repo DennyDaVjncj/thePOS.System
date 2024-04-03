@@ -75,7 +75,8 @@ class UiContent extends StatelessWidget {
       elevation: 12.0,
       child: Padding(
         padding: const EdgeInsets.all(39.0),
-        child: Text(couple.asLowerCase, style: style),
+        child: Text(couple.asLowerCase,
+            style: style, semanticsLabel: "${couple.first} ${couple.second}"),
       ),
     );
   } //this is what ultimately renders to the UI
