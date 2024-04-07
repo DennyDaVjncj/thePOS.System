@@ -44,7 +44,6 @@ class MyHomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('the POS system of POS systems'),
             UiContent(couple: couple),
             ElevatedButton(
               onPressed: () {
