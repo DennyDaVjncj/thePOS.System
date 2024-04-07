@@ -40,18 +40,20 @@ class MyHomePage extends StatelessWidget {
     var couple = appState.uiContent;
 
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text('the POS system of POS systems'),
-          UiContent(couple: couple),
-          ElevatedButton(
-            onPressed: () {
-              appState.getNext();
-            },
-            child: Text('click here to trigger an action potential'),
-          )
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('the POS system of POS systems'),
+            UiContent(couple: couple),
+            ElevatedButton(
+              onPressed: () {
+                appState.getNext();
+              },
+              child: Text('click here to trigger an action potential'),
+            )
+          ],
+        ),
       ),
     );
   }
