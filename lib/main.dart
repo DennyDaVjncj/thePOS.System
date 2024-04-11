@@ -31,6 +31,16 @@ class MyAppState extends ChangeNotifier {
     uiContent = WordPair.random();
     notifyListeners();
   }
+
+  var inclinations = <WordPair>[];
+  void toggleFavorite() {
+    if (inclinations.contains(uiContent)) {
+      inclinations.remove(uiContent);
+    } else {
+      inclinations.add(uiContent);
+    }
+    notifyListeners();
+  }
 }
 
 class MyHomePage extends StatelessWidget {
