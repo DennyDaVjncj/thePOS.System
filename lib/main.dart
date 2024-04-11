@@ -57,12 +57,13 @@ class MyHomePage extends StatelessWidget {
             UiContent(couple: couple),
             SizedBox(height: 10),
             Row(
+              mainAxisSize: MainAxisSize.min,
               children: [
                 ElevatedButton(
                   onPressed: () {
                     appState.getNext();
                   },
-                  child: Text('click here to trigger an action potential'),
+                  child: Text('trigger action potential'),
                 ),
               ],
             )
