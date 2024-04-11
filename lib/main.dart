@@ -100,5 +100,5 @@ class UiContent extends StatelessWidget {
   } //this is what ultimately renders to the UI
 }
 /**
- * left off with the copywith() update
+ * left off with trying to connect the "like" button to the toggleFavorite()
  */
