@@ -49,6 +49,13 @@ class MyHomePage extends StatelessWidget {
     var appState = context.watch<MyAppState>();
     var couple = appState.uiContent;
 
+    IconData jolie;
+    if (appState.inclinations.contains(couple)) {
+      jolie = Icons.inclinations;
+    } else {
+      jolie = Icons.inclinations_border;
+    }
+
     return Scaffold(
       body: Center(
         child: Column(
