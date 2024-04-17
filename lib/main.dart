@@ -65,6 +65,12 @@ class MyHomePage extends StatelessWidget {
                   },
                   child: Text('trigger action potential'),
                 ),
+                ElevatedButton(
+                  onPressed: () {
+                    appState.toggleFavorite();
+                  },
+                  child: Text('inclined'),
+                ),
               ],
             )
           ],
