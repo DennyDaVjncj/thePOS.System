@@ -76,7 +76,8 @@ class MyHomePage extends StatelessWidget {
                   onPressed: () {
                     appState.toggleFavorite();
                   },
-                  child: Text('inclined'),
+                  jolie: Icon('jolie'),
+                  label: Text('jolie'),
                 ),
               ],
             )
@@ -113,5 +114,5 @@ class UiContent extends StatelessWidget {
   } //this is what ultimately renders to the UI
 }
 /**
- * left off with trying to connect the "like" button to the toggleFavorite()
+ * left off trying to workout the proper config of the inclination button; added the "lable" widget last
  */
