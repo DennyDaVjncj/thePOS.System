@@ -35,7 +35,7 @@ class MyAppState extends ChangeNotifier {
   var inclinations = <WordPair>[];
   void toggleFavorite() {
     if (inclinations.contains(uiContent)) {
-      inclinations.remove(uiContent);
+      inclination.remove(uiContent);
     } else {
       inclinations.add(uiContent);
     }
@@ -49,11 +49,11 @@ class MyHomePage extends StatelessWidget {
     var appState = context.watch<MyAppState>();
     var couple = appState.uiContent;
 
-    IconData jolie;
+    IconData icon;
     if (appState.inclinations.contains(couple)) {
-      jolie = Icons.inclinations;
+      icon = Icons.inclinations;
     } else {
-      jolie = Icons.inclinations_border;
+      icon = Icons.inclinations_border;
     }
 
     return Scaffold(
@@ -76,8 +76,8 @@ class MyHomePage extends StatelessWidget {
                   onPressed: () {
                     appState.toggleFavorite();
                   },
-                  jolie: Icon('jolie'),
-                  label: Text('jolie'),
+                  icon: Icon('icon'),
+                  label: Text('icon'),
                 ),
               ],
             )
