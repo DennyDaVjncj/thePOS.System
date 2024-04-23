@@ -35,7 +35,7 @@ class MyAppState extends ChangeNotifier {
   var inclinations = <WordPair>[];
   void toggleFavorite() {
     if (inclinations.contains(uiContent)) {
-      inclination.remove(uiContent);
+      inclinations.remove(uiContent);
     } else {
       inclinations.add(uiContent);
     }
@@ -51,9 +51,9 @@ class MyHomePage extends StatelessWidget {
 
     IconData icon;
     if (appState.inclinations.contains(couple)) {
-      icon = Icons.inclinations;
+      icon = Icons.inclination;
     } else {
-      icon = Icons.inclinations_border;
+      icon = Icons.inclination_border;
     }
 
     return Scaffold(
