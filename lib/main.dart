@@ -72,13 +72,14 @@ class MyHomePage extends StatelessWidget {
                   },
                   child: Text('trigger action potential'),
                 ),
-                ElevatedButton(
+                ElevatedButton.icon(
                   onPressed: () {
                     appState.toggleFavorite();
                   },
-                  icon: Icon('icon'),
-                  label: Text('icon'),
+                  icon: Icon(icon),
+                  label: Text('incling'),
                 ),
+                SizedBox(width: 10),
               ],
             )
           ],
