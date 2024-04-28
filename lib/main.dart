@@ -51,7 +51,7 @@ class MyHomePage extends StatelessWidget {
 
     IconData icon;
     if (appState.inclinations.contains(couple)) {
-      icon = Icons.favorite;
+      icon = Icons.savings;
     } else {
       icon = Icons.favorite_border;
     }
@@ -71,6 +71,7 @@ class MyHomePage extends StatelessWidget {
                     appState.getNext();
                   },
                   child: Text('trigger action potential'),
+                  // icon: Icon(icon),
                 ),
                 ElevatedButton.icon(
                   onPressed: () {
@@ -115,5 +116,5 @@ class UiContent extends StatelessWidget {
   } //this is what ultimately renders to the UI
 }
 /**
- * left off trying to workout the proper config of the inclination button; added the "lable" widget last
+ * now at the top of section seven. we're going to access the store for our inclings
  */
