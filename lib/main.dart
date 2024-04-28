@@ -51,9 +51,9 @@ class MyHomePage extends StatelessWidget {
 
     IconData icon;
     if (appState.inclinations.contains(couple)) {
-      icon = Icons.inclination;
+      icon = Icons.favorite;
     } else {
-      icon = Icons.inclination_border;
+      icon = Icons.favorite_border;
     }
 
     return Scaffold(
