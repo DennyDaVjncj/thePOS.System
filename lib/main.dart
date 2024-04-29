@@ -156,14 +156,15 @@ class GeneratorPage extends StatelessWidget {
                   appState.toggleFavorite();
                 },
                 icon: Icon(icon),
-                label: Text('Like'),
+                label: Text('Incling'),
               ),
               SizedBox(width: 10),
-              ElevatedButton(
+              ElevatedButton.icon(
                 onPressed: () {
                   appState.getNext();
                 },
-                child: Text('Next'),
+                icon: Icon(icon),
+                label: Text('Trigger action-potential'),
               ),
             ],
           ),
