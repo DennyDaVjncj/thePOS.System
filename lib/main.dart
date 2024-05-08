@@ -153,5 +153,5 @@ class UiContent extends StatelessWidget {
   } //this is what ultimately renders to the UI
 }
 /**
- * now at the top of section seven. we're going to access the store for our inclings
+ * stateful vs stateless widgets
  */
