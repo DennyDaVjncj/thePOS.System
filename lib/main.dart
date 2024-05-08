@@ -43,55 +43,6 @@ class MyAppState extends ChangeNotifier {
   }
 }
 
-// class MyHomePage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     var appState = context.watch<MyAppState>();
-//     var couple = appState.uiContent;
-
-//     IconData icon;
-//     if (appState.inclinations.contains(couple)) {
-//       icon = Icons.savings;
-//     } else {
-//       icon = Icons.favorite_border;
-//     }
-
-//     return Scaffold(
-//       body: Center(
-//         child: Column(
-//           mainAxisAlignment: MainAxisAlignment.center,
-//           children: [
-//             UiContent(couple: couple),
-//             SizedBox(height: 10),
-//             Row(
-//               mainAxisSize: MainAxisSize.min,
-//               children: [
-//                 ElevatedButton(
-//                   onPressed: () {
-//                     appState.getNext();
-//                   },
-//                   child: Text('trigger action potential'),
-//                   // icon: Icon(icon),
-//                 ),
-//                 ElevatedButton.icon(
-//                   onPressed: () {
-//                     appState.toggleFavorite();
-//                   },
-//                   icon: Icon(icon),
-//                   label: Text('incling'),
-//                 ),
-//                 SizedBox(width: 10),
-//               ],
-//             )
-//           ],
-//         ),
-//       ),
-//     );
-//   }
-// }
-
-// ...
-
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
