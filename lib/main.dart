@@ -70,7 +70,7 @@ class MyHomePage extends StatelessWidget {
           ),
           Expanded(
             child: Container(
-              color: Theme.of(context).colorScheme.primaryContainer,
+              color: Theme.of(context).colorScheme.primary,
               child: GeneratorPage(),
             ),
           ),
