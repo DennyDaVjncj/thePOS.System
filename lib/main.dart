@@ -71,7 +71,9 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
               selectedIndex: 0,
               onDestinationSelected: (value) {
-                print('selected: $value');
+                setState(() {
+                  selectedIndex = value;
+                });
               },
             ),
           ),
