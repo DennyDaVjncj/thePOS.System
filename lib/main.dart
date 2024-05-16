@@ -50,7 +50,7 @@ class MyHomePage extends StatefulWidget {
 
 ///**
 ///this instantiation of our MyHomPage widget, is made private by the underscore preceeding the class-name.
-///this widget contains the "business-logic" if you will.
+///this widget contains the "business-logic" if you will. this contains the details
 ///this widget is the definition to our MyHomePage class, right above.
 /// */
 class _MyHomePageState extends State<MyHomePage> {
