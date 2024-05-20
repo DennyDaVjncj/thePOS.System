@@ -74,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   label: Text('Inclings'),
                 ),
               ],
-              selectedIndex: 0,
+              selectedIndex: selectedIndex,
               onDestinationSelected: (value) {
                 setState(() {
                   selectedIndex = value;
