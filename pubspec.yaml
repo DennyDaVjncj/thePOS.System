@@ -20,7 +20,7 @@ version: 0.0.1+1
 
 environment:
   sdk: '>=2.19.4 <4.0.0'
-  # variable: 1//01B29LHjkDGqZCgYIARAAGAESNwF-L9Ir4XPlvb-flLkmHumcgx5mg_hb0UgxRu1bTywDPxZ9U7zMH6rxFNYyE_2_9zUsH0vX-qI
+  # FIREBASE_TOKEN: 1//01B29LHjkDGqZCgYIARAAGAESNwF-L9Ir4XPlvb-flLkmHumcgx5mg_hb0UgxRu1bTywDPxZ9U7zMH6rxFNYyE_2_9zUsH0vX-qI
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
