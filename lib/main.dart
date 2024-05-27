@@ -182,4 +182,9 @@ class UiContent extends StatelessWidget {
  * deepened understanding of widget states
  * left off at setState
  * use cli with ci systems
+ * last step before fully installing firebase: Installed executable flutterfire.
+Warning: Pub installs executables into $HOME/.pub-cache/bin, which is not on your path.
+You can fix that by adding this to your shell's config file (.bashrc, .bash_profile, etc.):
+
+  export PATH="$PATH":"$HOME/.pub-cache/bin"
  */
