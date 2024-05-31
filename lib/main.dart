@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 NavigationRailDestination(
                   icon: Icon(Icons.build),
                   label: Text('working on it'),
-                ),
+                )
               ],
               selectedIndex: selectedIndex,
               onDestinationSelected: (value) {
@@ -146,7 +146,7 @@ class GeneratorPage extends StatelessWidget {
                 onPressed: () {
                   appState.getNext();
                 },
-                icon: Icon(icon),
+                icon: Icon(Icons.tips_and_updates),
                 label: Text('Trigger action-potential'),
               ),
             ],
