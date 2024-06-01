@@ -209,6 +209,7 @@ class UiContent extends StatelessWidget {
 }
 /**
  * SECTION 8: add a new page
+ * left off on line 172
   
  * use cli with ci systems
  * last step before fully installing firebase: Installed executable flutterfire.
