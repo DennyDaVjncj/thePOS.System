@@ -159,6 +159,27 @@ class GeneratorPage extends StatelessWidget {
   }
 }
 
+class inclingsPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    var appCntxt = context.watch<MyAppState>();
+
+    if (appCntxt.inclinations.isEmpty) {
+      return Center(
+        child: Text('develop some intuition'),
+      );
+
+      return ListView(
+        children:[
+          Padding(padding:const EdgeInsets.all(20,
+          child:Text('You have ')
+          ))
+        ]
+      )
+    }
+  }
+}
+
 // ...
 
 class UiContent extends StatelessWidget {
