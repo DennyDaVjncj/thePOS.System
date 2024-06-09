@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
         page = GeneratorPage();
         break;
       case 1:
-        page = Placeholder();
+        page = InclingsPage();
         break;
       case 2:
         page = Placeholder();
