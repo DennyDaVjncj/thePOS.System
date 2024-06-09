@@ -159,7 +159,7 @@ class GeneratorPage extends StatelessWidget {
   }
 }
 
-class inclingsPage extends StatelessWidget {
+class InclingsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var appCntxt = context.watch<MyAppState>();
@@ -170,15 +170,19 @@ class inclingsPage extends StatelessWidget {
       );
     }
 
-      return ListView(
-        children:[
-          Padding(padding:const EdgeInsets.all(20,
-          child:Text('You have ')
-          ))
-        ]
-      )
-    }
+    return ListView(children: [
+      Padding(
+          padding: const EdgeInsets.all(20),
+          child: Text('You have '
+              '${appCntxt.inclinations.length} inclinations, apparently')),
+      for (var litPair in appCntxt.inclinations)
+        ListTile(
+          leading: Icon(Icons.favorite),
+          title: Text(litPair.asLowerCase),
+        )
+    ]);
   }
+}
 
 // ...
 
