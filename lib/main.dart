@@ -149,7 +149,7 @@ class GeneratorPage extends StatelessWidget {
                   appState.getNext();
                 },
                 icon: Icon(Icons.tips_and_updates),
-                label: Text('Trigger action-potential'),
+                label: Text('action-potential'),
               ),
             ],
           ),
@@ -168,6 +168,7 @@ class inclingsPage extends StatelessWidget {
       return Center(
         child: Text('develop some intuition'),
       );
+    }
 
       return ListView(
         children:[
@@ -178,7 +179,6 @@ class inclingsPage extends StatelessWidget {
       )
     }
   }
-}
 
 // ...
 
